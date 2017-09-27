@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="1. In a bowl, combine soy sauce, lemon juice, garlic, sugar, salt and pepper. Stir until sugar and salt are dissolved. Add chicken and massage to fully coat with marinade. Keep overnight in the refrigerator to cure. Drain meat from marinade."/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="20dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="2. In a wide pan over medium heat, heat about 1 tablespoon oil. Add chicken in a single layer and cook, turning on sides, for about 10 to 15 minutes or until liquid (meat will dispel liquid) is almost absorbed. Add another 1 tablespoon of oil and continue to cook, turning as needed, until meat is lightly browned. Remove from pan and cut into serving portions. Serve hot."/>
+
+</LinearLayout>
+</ScrollView>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="1. In a pot over medium heat, heat oil. Add potatoes and cook for about 3 to 4 minutes or until lightly browned and tender. Remove from pan and drain on paper towels. Add carrots and cook for about 1 to 2 minutes. Remove from pan and drain on paper towels."/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="20dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="2. Remove excess oil from pot, leaving about 1 tablespoon. Add onions and garlic and cook until limp and aromatic. Add chicken and cook, stirring occasionally, for about 7 to 8 minutes or until chicken changes color and juices run clear. Add fish sauce and continue to cook for about 2 to 3 minutes."/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="20dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="3. Add coconut milk and water. Bring to a simmer. Lower heat, cover and continue to cook for about 25 to 30 minutes or until chicken is fully cooked. Add potatoes and carrots and cook for about 3 to 5 minutes or until fork-tender."/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="20dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="4. Add curry powder and cook, stirring to combine, for about 3 to 5 minutes or until sauce starts to thicken. Season with salt to taste. Add bell peppers and cook for about 1 minute or until tender yet crisp. Serve hot."/>
+
+</LinearLayout>
+</ScrollView>
