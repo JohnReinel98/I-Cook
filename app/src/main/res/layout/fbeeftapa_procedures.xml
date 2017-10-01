@@ -11,7 +11,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="1. In a pot over medium heat, heat oil. Add potatoes and cook for about 3 to 4 minutes or until lightly browned and tender. Remove from pan and drain on paper towels. Add carrots and cook for about 1 to 2 minutes. Remove from pan and drain on paper towels."/>
+        android:text="1. In a bowl, combine soy sauce, calamansi juice, garlic, sugar, salt and pepper. Stir until sugar and salt are dissolved. Add beef and massage to fully coat with marinade. Keep overnight in the refrigerator to cure. Drain meat from marinade."/>
 
     <View
         android:layout_width="match_parent"
@@ -20,25 +20,11 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="2. Remove excess oil from pot, leaving about 1 tablespoon. Add onions and garlic and cook until limp and aromatic. Add chicken and cook, stirring occasionally, for about 7 to 8 minutes or until chicken changes color and juices run clear. Add fish sauce and continue to cook for about 2 to 3 minutes."/>
+        android:text="2. In a wide pan over medium heat, heat about 1 tablespoon oil. Add beef in a single layer and cook, turning on sides, for about 3 to 5 minutes or until liquid (meat will dispel liquid) is almost absorbed. Add another 1 tablespoon of oil and continue to cook until meat is lightly browned. Remove from pan and cut into serving portions. Serve hot."/>
 
     <View
         android:layout_width="match_parent"
         android:layout_height="20dp"/>
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="3. Add coconut milk and water. Bring to a simmer. Lower heat, cover and continue to cook for about 25 to 30 minutes or until chicken is fully cooked. Add potatoes and carrots and cook for about 3 to 5 minutes or until fork-tender."/>
-
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="20dp"/>
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="4. Add curry powder and cook, stirring to combine, for about 3 to 5 minutes or until sauce starts to thicken. Season with salt to taste. Add bell peppers and cook for about 1 minute or until tender yet crisp. Serve hot."/>
 
 </LinearLayout>
 </ScrollView>

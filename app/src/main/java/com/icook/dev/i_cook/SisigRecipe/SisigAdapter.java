@@ -1,4 +1,4 @@
-package com.icook.dev.i_cook.DaingRecipe;
+package com.icook.dev.i_cook.SisigRecipe;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -15,33 +15,33 @@ import java.util.List;
  * Created by Win8.1 on 9/23/2017.
  */
 
-public class DaingAdapter extends ArrayAdapter<ListDaingIngredients>{
+public class SisigAdapter extends ArrayAdapter<ListSisigIngredients>{
     private Context context;
 
-    public DaingAdapter(Context context, int resourceId, List<ListDaingIngredients> items){
+    public SisigAdapter(Context context, int resourceId, List<ListSisigIngredients> items){
         super(context,resourceId, items);
         this.context = context;
     }
 
     public class ViewHolder{
-        public TextView daingIngredient;
+        public TextView sisigIngredient;
     }
 
     public View getView(int position, View convertView, ViewGroup parent){
         ViewHolder holder = null;
-        ListDaingIngredients rowItem = getItem(position);
+        ListSisigIngredients rowItem = getItem(position);
         LayoutInflater mInflater = (LayoutInflater) context.getSystemService(getContext().LAYOUT_INFLATER_SERVICE);
 
         if(convertView == null){
-            convertView = mInflater.inflate(R.layout.list_daing_ingredients, null);
+            convertView = mInflater.inflate(R.layout.list_sisig_ingredients, null);
             holder = new ViewHolder();
-            holder.daingIngredient = (TextView)convertView.findViewById(R.id.daingIngredient);
+            holder.sisigIngredient = (TextView)convertView.findViewById(R.id.sisigIngredient);
             convertView.setTag(holder);
         }else{
             holder = (ViewHolder) convertView.getTag();
         }
 
-        holder.daingIngredient.setText(rowItem.getIngredient());
+        holder.sisigIngredient.setText(rowItem.getIngredient());
         return convertView;
     }
 }

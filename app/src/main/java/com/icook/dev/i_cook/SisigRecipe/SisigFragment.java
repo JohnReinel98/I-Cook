@@ -1,4 +1,4 @@
-package com.icook.dev.i_cook.ChickenTocinoRecipe;
+package com.icook.dev.i_cook.SisigRecipe;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -21,35 +21,35 @@ import java.util.List;
  * Created by Win8.1 on 9/23/2017.
  */
 
-public class ChickenTocinoFragment extends Fragment {
+public class SisigFragment extends Fragment {
 
     private RecyclerView recyclerView;
     private RecyclerView.Adapter adapter;
-    private TabLayout ctocinoTabLayout;
-    private ViewPager ctocinoViewPager;
+    private TabLayout sisigTabLayout;
+    private ViewPager sisigViewPager;
 
     //private List<ListBurger> listBurgers;
 
-    public ChickenTocinoFragment(){}
+    public SisigFragment(){}
 
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        View rootView = inflater.inflate(R.layout.chicken_tocino_fragment,container,false);
+        View rootView = inflater.inflate(R.layout.sisig_fragment,container,false);
 
-        ctocinoViewPager = (ViewPager) rootView.findViewById(R.id.ctocinoviewpager);
-        setupViewPager(ctocinoViewPager);
+        sisigViewPager = (ViewPager) rootView.findViewById(R.id.sisigviewpager);
+        setupViewPager(sisigViewPager);
 
-        ctocinoTabLayout = (TabLayout) rootView.findViewById(R.id.ctocinotabs);
-        ctocinoTabLayout.setupWithViewPager(ctocinoViewPager);
+        sisigTabLayout = (TabLayout) rootView.findViewById(R.id.sisigtabs);
+        sisigTabLayout.setupWithViewPager(sisigViewPager);
 
         return rootView;
     }
 
     private void setupViewPager(ViewPager viewPager) {
-        ChickenTocinoFragment.ViewPagerAdapter adapter = new ChickenTocinoFragment.ViewPagerAdapter(getChildFragmentManager());
-        adapter.addFragment(new ChickenTocinoIngredients(), "Ingredients");
-        adapter.addFragment(new ChickenTocinoProcedures(), "Procedures");
+        SisigFragment.ViewPagerAdapter adapter = new SisigFragment.ViewPagerAdapter(getChildFragmentManager());
+        adapter.addFragment(new SisigIngredients(), "Ingredients");
+        adapter.addFragment(new SisigProcedures(), "Procedures");
         viewPager.setAdapter(adapter);
     }
 
@@ -85,6 +85,6 @@ public class ChickenTocinoFragment extends Fragment {
     @Override
     public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-        getActivity().setTitle("Chicken Tocino");
+        getActivity().setTitle("Crunchy Sisig");
     }
 }

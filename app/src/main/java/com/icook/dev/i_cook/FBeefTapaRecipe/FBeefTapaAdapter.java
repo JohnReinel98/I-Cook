@@ -24,7 +24,7 @@ public class FBeefTapaAdapter extends ArrayAdapter<ListFBeefTapaIngredients>{
     }
 
     public class ViewHolder{
-        public TextView curryIngredient;
+        public TextView fbeeftapaIngredient;
     }
 
     public View getView(int position, View convertView, ViewGroup parent){
@@ -33,15 +33,15 @@ public class FBeefTapaAdapter extends ArrayAdapter<ListFBeefTapaIngredients>{
         LayoutInflater mInflater = (LayoutInflater) context.getSystemService(getContext().LAYOUT_INFLATER_SERVICE);
 
         if(convertView == null){
-            convertView = mInflater.inflate(R.layout.list_curry_ingredients, null);
+            convertView = mInflater.inflate(R.layout.list_fbeeftapa_ingredients, null);
             holder = new ViewHolder();
-            holder.curryIngredient = (TextView)convertView.findViewById(R.id.curryIngredient);
+            holder.fbeeftapaIngredient = (TextView)convertView.findViewById(R.id.fbeeftapaIngredient);
             convertView.setTag(holder);
         }else{
             holder = (ViewHolder) convertView.getTag();
         }
 
-        holder.curryIngredient.setText(rowItem.getIngredient());
+        holder.fbeeftapaIngredient.setText(rowItem.getIngredient());
         return convertView;
     }
 }

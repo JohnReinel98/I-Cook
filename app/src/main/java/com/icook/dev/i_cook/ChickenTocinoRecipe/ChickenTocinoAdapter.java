@@ -24,7 +24,7 @@ public class ChickenTocinoAdapter extends ArrayAdapter<ListChickenTocinoIngredie
     }
 
     public class ViewHolder{
-        public TextView ctapaIngredient;
+        public TextView ctocinoIngredient;
     }
 
     public View getView(int position, View convertView, ViewGroup parent){
@@ -33,15 +33,15 @@ public class ChickenTocinoAdapter extends ArrayAdapter<ListChickenTocinoIngredie
         LayoutInflater mInflater = (LayoutInflater) context.getSystemService(getContext().LAYOUT_INFLATER_SERVICE);
 
         if(convertView == null){
-            convertView = mInflater.inflate(R.layout.list_ctapa_ingredients, null);
+            convertView = mInflater.inflate(R.layout.list_ctocino_ingredients, null);
             holder = new ViewHolder();
-            holder.ctapaIngredient = (TextView)convertView.findViewById(R.id.ctapaIngredient);
+            holder.ctocinoIngredient = (TextView)convertView.findViewById(R.id.ctocinoIngredient);
             convertView.setTag(holder);
         }else{
             holder = (ViewHolder) convertView.getTag();
         }
 
-        holder.ctapaIngredient.setText(rowItem.getIngredient());
+        holder.ctocinoIngredient.setText(rowItem.getIngredient());
         return convertView;
     }
 }

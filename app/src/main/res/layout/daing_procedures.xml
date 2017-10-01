@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="1. Wash bangus under cold running water, removing any leftover blood and entrails. Drain well"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="20dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="2. In a wide, deep casserole (large enough to fit the fish), combine vinegar, garlic, pepper corns and salt. Whisk together until salt is dissolved. Add fish, making sure they are fully submerged in the solution. Marinate in the refrigerator for at least 4 hours or overnight for best results."/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="20dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="3. Drain fish from the vinegar and wipe down any stray aromatics. Discard marinade."/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="20dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="4. In a wide pan over medium heat, heat about 1-inch deep of oil. Gently slide in fish and cook for about 3 to 5 minutes on each side or until golden and cooked through. Remove from pan and drain on paper towels. Serve hot."/>
+</LinearLayout>
+</ScrollView>

@@ -14,7 +14,6 @@ import android.widget.TextView;
 
 import com.icook.dev.i_cook.ChickTapaRecipe.ChickTapaFragment;
 import com.icook.dev.i_cook.ChickenTocinoRecipe.ChickenTocinoFragment;
-import com.icook.dev.i_cook.CurryRecipe.CurryFragment;
 import com.icook.dev.i_cook.DaingRecipe.DaingFragment;
 import com.icook.dev.i_cook.FBeefTapaRecipe.FBeefTapaFragment;
 
@@ -24,58 +23,58 @@ import java.util.List;
  * Created by Win8.1 on 9/23/2017.
  */
 
-public class BFastAdapter extends RecyclerView.Adapter<BFastAdapter.ViewHolder>{
-    private List<ListBFast> listBfast;
+public class LunchAdapter extends RecyclerView.Adapter<LunchAdapter.ViewHolder>{
+    private List<ListLunch> listLunch;
     private Context context;
-    CardView bfastCardView;
+    CardView lunchCardView;
 
-    public BFastAdapter(List<ListBFast> listBurgers, Context context) {
-        this.listBfast = listBurgers;
+    public LunchAdapter(List<ListLunch> listLunch, Context context) {
+        this.listLunch = listLunch;
         this.context = context;
     }
 
     @Override
     public ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-        View v = LayoutInflater.from(parent.getContext()).inflate(R.layout.list_bfast, parent, false);
+        View v = LayoutInflater.from(parent.getContext()).inflate(R.layout.list_lunch, parent, false);
         return  new ViewHolder(v);
     }
 
     @Override
     public void onBindViewHolder(final ViewHolder holder, final int position) {
-        final ListBFast listBurger = listBfast.get(position);
+        final ListLunch listlunch = listLunch.get(position);
 
 
-        holder.bPic.setImageResource(listBurger.getPic());
-        holder.bTitle.setText(listBurger.getTitle());
+        holder.lPic.setImageResource(listlunch.getPic());
+        holder.lTitle.setText(listlunch.getTitle());
 
         holder.linearLayout.setOnClickListener(new View.OnClickListener(){
 
             @Override
             public void onClick(View view) {
                 Bundle bundle = new Bundle();
-                bundle.putString("Title",listBfast.get(position).getTitle());
+                bundle.putString("Title",listLunch.get(position).getTitle());
 
-                CharSequence tmpCheck = holder.bTitle.getText();
-                if(tmpCheck.equals("Chicken Tapa")) {
+                CharSequence tmpCheck = holder.lTitle.getText();
+                if(tmpCheck.equals("Chicken Curry")) {
                     AppCompatActivity activity = (AppCompatActivity) view.getContext();
                     ChickTapaFragment fragment = new ChickTapaFragment();
                     fragment.setArguments(bundle);
                     activity.getSupportFragmentManager().beginTransaction().replace(R.id.content_home, fragment).addToBackStack(null).commit();
                 }
-                if(tmpCheck.equals("Filipino Beef Tapa")){
+                if(tmpCheck.equals("Crunchy Sisig")){
                     AppCompatActivity activity = (AppCompatActivity) view.getContext();
                     FBeefTapaFragment fragment = new FBeefTapaFragment();
                     fragment.setArguments(bundle);
                     activity.getSupportFragmentManager().beginTransaction().replace(R.id.content_home, fragment).addToBackStack(null).commit();
                 }
-                if(tmpCheck.equals("Chicken Tocino")){
+                if(tmpCheck.equals("Pinakbet")){
                     AppCompatActivity activity = (AppCompatActivity) view.getContext();
                     ChickenTocinoFragment fragment = new ChickenTocinoFragment();
                     fragment.setArguments(bundle);
                     activity.getSupportFragmentManager().beginTransaction().replace(R.id.content_home, fragment).addToBackStack(null).commit();
 
                 }
-                if(tmpCheck.equals("Daing na Bangus")){
+                if(tmpCheck.equals("Paksiw na Lechon")){
                     AppCompatActivity activity = (AppCompatActivity) view.getContext();
                     DaingFragment fragment = new DaingFragment();
                     fragment.setArguments(bundle);
@@ -88,22 +87,22 @@ public class BFastAdapter extends RecyclerView.Adapter<BFastAdapter.ViewHolder>{
 
     @Override
     public int getItemCount() {
-        return listBfast.size();
+        return listLunch.size();
     }
 
     public class ViewHolder extends RecyclerView.ViewHolder{
 
-        public TextView bTitle;
-        public ImageView bPic;
+        public TextView lTitle;
+        public ImageView lPic;
         public LinearLayout linearLayout;
 
         public ViewHolder(View itemView) {
             super(itemView);
 
-            bPic = (ImageView) itemView.findViewById(R.id.bfastPic);
-            bTitle = (TextView) itemView.findViewById(R.id.bfastTitle);
-            linearLayout = (LinearLayout) itemView.findViewById(R.id.linearLayout);
-            bfastCardView = (CardView) itemView.findViewById(R.id.bfastCardView);
+            lPic = (ImageView) itemView.findViewById(R.id.lunchPic);
+            lTitle = (TextView) itemView.findViewById(R.id.lunchTitle);
+            linearLayout = (LinearLayout) itemView.findViewById(R.id.lunchlinearLayout);
+            lunchCardView = (CardView) itemView.findViewById(R.id.lunchCardView);
         }
     }
 }

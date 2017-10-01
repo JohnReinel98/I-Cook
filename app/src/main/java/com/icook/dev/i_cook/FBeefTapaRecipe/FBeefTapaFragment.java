@@ -25,8 +25,8 @@ public class FBeefTapaFragment extends Fragment {
 
     private RecyclerView recyclerView;
     private RecyclerView.Adapter adapter;
-    private TabLayout curryTabLayout;
-    private ViewPager curryViewPager;
+    private TabLayout fbeeftapaTabLayout;
+    private ViewPager fbeeftapaViewPager;
 
     //private List<ListBurger> listBurgers;
 
@@ -35,13 +35,13 @@ public class FBeefTapaFragment extends Fragment {
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        View rootView = inflater.inflate(R.layout.chicken_curry_fragment,container,false);
+        View rootView = inflater.inflate(R.layout.fbeef_tapa_fragment,container,false);
 
-        curryViewPager = (ViewPager) rootView.findViewById(R.id.curryviewpager);
-        setupViewPager(curryViewPager);
+        fbeeftapaViewPager = (ViewPager) rootView.findViewById(R.id.fbeeftapaviewpager);
+        setupViewPager(fbeeftapaViewPager);
 
-        curryTabLayout = (TabLayout) rootView.findViewById(R.id.currytabs);
-        curryTabLayout.setupWithViewPager(curryViewPager);
+        fbeeftapaTabLayout = (TabLayout) rootView.findViewById(R.id.fbeeftapatabs);
+        fbeeftapaTabLayout.setupWithViewPager(fbeeftapaViewPager);
 
         return rootView;
     }
@@ -85,6 +85,6 @@ public class FBeefTapaFragment extends Fragment {
     @Override
     public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-        getActivity().setTitle("Chicken Curry");
+        getActivity().setTitle("Filipino Beef Tapa");
     }
 }

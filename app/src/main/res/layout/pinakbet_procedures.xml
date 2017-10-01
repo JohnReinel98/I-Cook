@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="1. In a large bowl, combine lechon kawali, bell pepper, onions, chili peppers and calamansi juice. Gently toss together to evenly distribute. Season with salt and pepper to taste."/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="20dp"/>
+
+</LinearLayout>
+</ScrollView>

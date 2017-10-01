@@ -25,8 +25,8 @@ public class DaingFragment extends Fragment {
 
     private RecyclerView recyclerView;
     private RecyclerView.Adapter adapter;
-    private TabLayout ctapaTabLayout;
-    private ViewPager ctapaViewPager;
+    private TabLayout daingTabLayout;
+    private ViewPager daingViewPager;
 
     //private List<ListBurger> listBurgers;
 
@@ -35,13 +35,13 @@ public class DaingFragment extends Fragment {
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        View rootView = inflater.inflate(R.layout.chicken_tapa_fragment,container,false);
+        View rootView = inflater.inflate(R.layout.daing_fragment,container,false);
 
-        ctapaViewPager = (ViewPager) rootView.findViewById(R.id.ctapaviewpager);
-        setupViewPager(ctapaViewPager);
+        daingViewPager = (ViewPager) rootView.findViewById(R.id.daingviewpager);
+        setupViewPager(daingViewPager);
 
-        ctapaTabLayout = (TabLayout) rootView.findViewById(R.id.ctapatabs);
-        ctapaTabLayout.setupWithViewPager(ctapaViewPager);
+        daingTabLayout = (TabLayout) rootView.findViewById(R.id.daingtabs);
+        daingTabLayout.setupWithViewPager(daingViewPager);
 
         return rootView;
     }
@@ -85,6 +85,6 @@ public class DaingFragment extends Fragment {
     @Override
     public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-        getActivity().setTitle("Chicken Tapa");
+        getActivity().setTitle("Daing na Bangus");
     }
 }

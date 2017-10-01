@@ -17,15 +17,13 @@ import java.util.List;
  */
 
 public class FBeefTapaIngredients extends Fragment {
-    private ListView curryListView;
+    private ListView fbeeftapaListView;
     FBeefTapaAdapter adapter;
     List<ListFBeefTapaIngredients> listIngredient;
 
-    public static final String[] ingredientsArray = new String[] {"¼ cup oil","2 medium potatoes, " +
-            "peeled and quartered","2 large carrots, peeled and cubed","1 small onion, peeled and chopped"
-                ,"2 to 3 cloves garlic, peeled and minced","1 (3 to 4 pounds) whole chicken, cut into serving parts"
-                ,"1 tablespoon fish sauce","2 cups coconut milk","1 cup water","½ green bell pepper, seeded and cut into cubes",
-                "½ red bell pepper, seeded and cut into cubes","2 tablespoons curry powder","salt to taste"};
+    public static final String[] ingredientsArray = new String[] {"½ cup soy sauce","¼ cup calamansi juice, " +
+            "1 head garlic, minced","2 tablespoons sugar","½ teaspoon salt"
+                ,"¼ teaspoon pepper","3 pounds sirloin, thinly sliced","oil"};
 
 
     public FBeefTapaIngredients() {
@@ -39,9 +37,9 @@ public class FBeefTapaIngredients extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.curry_ingredients, container, false);
+        View view = inflater.inflate(R.layout.fbeeftapa_ingredients, container, false);
 
-        curryListView = (ListView) view.findViewById(R.id.curryListView);
+        fbeeftapaListView = (ListView) view.findViewById(R.id.fbeeftapaListView);
 
         listIngredient = new ArrayList<ListFBeefTapaIngredients>();
 
@@ -50,8 +48,8 @@ public class FBeefTapaIngredients extends Fragment {
             listIngredient.add(listIng);
         }
 
-        FBeefTapaAdapter adapter = new FBeefTapaAdapter(getActivity(),R.layout.list_curry_ingredients,listIngredient);
-        curryListView.setAdapter(adapter);
+        FBeefTapaAdapter adapter = new FBeefTapaAdapter(getActivity(),R.layout.list_fbeeftapa_ingredients,listIngredient);
+        fbeeftapaListView.setAdapter(adapter);
 
         return view;
     }

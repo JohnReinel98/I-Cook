@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="1. In a bowl, combine chicken, pineapple juice, ketchup, salt, garlic powder and sugar. Massage meat with curing mixture until well-distributed and evenly colored. Store in a covered container or ziplock bag and refrigerate overnight to cure."/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="20dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="2. In a pan over medium heat, add chicken including marinade and enough water to cover. Bring to a boil. Lower heat, cover and simmer until meat is tender and cooked through, adding more water in ½ cup increments as needed. When water is completely absorbed and meat is tender, add oil and cook, stirring regularly, until meat caramelizes. Serve hot."/>
+
+</LinearLayout>
+</ScrollView>
