@@ -57,7 +57,6 @@ public class Recipes extends Fragment {
         adapter.addFragment(new TabBFast(), "Breakfast");
         adapter.addFragment(new TabLunch(), "Lunch");
         adapter.addFragment(new TabDinner(), "Dinner");
-        adapter.addFragment(new TabDessert(), "Dessert");
         viewPager.setAdapter(adapter);
     }
 

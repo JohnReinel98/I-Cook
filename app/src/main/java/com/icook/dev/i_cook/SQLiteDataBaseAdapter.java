@@ -2,6 +2,7 @@ package com.icook.dev.i_cook;
 
 import android.content.ContentValues;
 import android.content.Context;
+import android.database.Cursor;
 import android.database.SQLException;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
@@ -38,6 +39,26 @@ public class SQLiteDataBaseAdapter {
         public MyHelper(Context context) {
             super(context, DATABASE_NAME, null, DATABASE_VERSION);
             this.context1 = context;
+        }
+
+        public String[] searchData(String id){
+            String[] data = new String[5];
+            SQLiteDatabase db = helper.getReadableDatabase();
+            String[] whereArgs = { id };
+            String[] columns = { MyHelper.UID, MyHelper.USER_NAME,
+                    MyHelper.USER_PASSW, MyHelper.USER_EMAIL, MyHelper.USER_CONTACT};
+            Cursor c = db.query(TABLE_NAME, columns, UID + " = ? ", whereArgs ,null,null,null);
+
+            if(c.moveToNext()) {
+                String userlname = c.getString(1);
+                String usermi = c.getString(3);
+                String useremail = c.getString(4);
+
+                data[1] = userlname;
+                data[3] = usermi;
+                data[4] = useremail;
+            }
+            return data;
         }
 
         public long registerUser(String user_name, String user_passw, String user_email, String user_contact) {

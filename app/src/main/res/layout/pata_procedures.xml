@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="1. Have the butcher cut pork leg at about 2 inches apart but not all the way through. Under cold running water, rinse pork leg. Pat dry."/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="20dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="2. In a wide pan over high heat, heat 2 tablespoons of the oil. Add pork leg and sear on all sides. Remove from pan and set aside."/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="20dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="3. In a large pot, combine Chinese cooking wine, vinegar, soy sauce, sugar, star anise, and water. Over medium heat, bring to a boil, stirring regularly until sugar is dissolved. "/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="20dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="4. Gently place pork leg into the liquid mixture and boil for about 5 minutes. "/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="20dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="5. Lower heat, cover and continue to cook for about 2 to 2-1/2 hours or until meat is very tender and almost falling off the bone. Add more water in 1 cup increments as needed during cooking to maintain about 2 cups of sauce."/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="20dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="6. In a bowl, soak mushrooms in warm water for about 25 to 30 minutes or until softened. Squeeze liquid and slice mushrooms into 1-inch thick strips."/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="20dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="7. In a pan over high heat, heat the remaining 1 tablespoon oil. Add mushrooms and cook, stirring regularly, for about 1 minute or until heated through. Remove from pan and keep warm."/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="20dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="8. In the pan, add bok choy and cook, stirring regularly, for about 30 seconds or until tender yet crisp."/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="20dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="9. To serve, place pork leg on a serving platter. Arrange bok choy and shitake mushrooms around pork leg. Spoon sauce over the vegetables and meat. Serve hot."/>
+</LinearLayout>
+</ScrollView>

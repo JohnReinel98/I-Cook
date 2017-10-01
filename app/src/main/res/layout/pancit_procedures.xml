@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="1. In a large pot over medium heat, combine chicken stock and soy sauce. Bring to a boil."/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="20dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="2. Submerge noodles into the liquid and cook, using tongs to loosen strands, for about 1 to 2 minutes or just until softened. Drain noodles and reserve about 1 1/2 to 2 cups of the liquid."/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="20dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="3. In a small bowl, combine chicken and one tablespoon of the cornstarch. Set aside for about 10 minutes. Drain well."/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="20dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="4. In another bowl, combine shrimps and the remaining one tablespoon cornstarch. Set aside for about 10 minutes. Drain well."/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="5. In a wok or wide skillet over medium heat, heat about 1 tablespoon oil. Add chicken and cook, stirring regularly, for about 3 to 5 minutes or until lightly browned. Remove from heat and drain on paper towels. Wipe down wok or skillet and add another tablespoon of oil as needed."/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="20dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="6. Add shrimps and cook for about 1 to 2 minutes or until color changes to pink. Remove from heat and drain on paper towels. Wipe down wok or skillet and add another tablespoon of oil as needed."/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="20dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="7. Add onions and garlic and cook until softened."/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="20dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="8. Add pork hamonado and cook, stirring regularly, until they start to brown."/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="20dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="9. Add carrots and celery and cook for about 30 to 40 seconds. "/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="20dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="10. Add cabbage and cook for about 30 to 40 seconds. Continue to cook until vegetables are tender yet crisp."/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="20dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="11. Return shrimp and chicken to wok."/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="20dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="12. Add noodles. Add reserved liquid in 1/2 cup increments. Gently toss and stir, adding more liquid as needed, until noodles are cooked yet firm to bite, vegetables are tender-crisp, and liquid is absorbed. "/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="20dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="13. Season with salt and pepper to taste. Transfer to serving platter and garnish with chopped green onions. Serve with calamansi wedges."/>
+</LinearLayout>
+</ScrollView>

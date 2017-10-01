@@ -19,8 +19,8 @@ public class TabLunch extends Fragment {
     private RecyclerView recyclerView;
     private RecyclerView.Adapter adapter;
 
-    public static final String[] titleArray = new String[] {"Chicken Curry","Cruncy Sisig","Pinakbet","Paksiw na Lechon"};
-    public static final Integer[] imageArray = {R.drawable.chicken_curry,R.drawable.chicken_curry,R.drawable.chicken_curry,R.drawable.chicken_curry};
+    public static final String[] titleArray = new String[] {"Chicken Curry","Crunchy Sisig","Pinakbet","Paksiw na Lechon"};
+    public static final Integer[] imageArray = {R.drawable.chicken_curry,R.drawable.crunchy_sisig,R.drawable.pinakbet,R.drawable.paksiw_lechon};
 
     private List<ListBFast> listRecipes;
 

@@ -79,9 +79,6 @@ public class HomeActivity extends AppCompatActivity
             case R.id.nav_profile:
                 fragment = new Profile();
                 break;
-            case R.id.nav_search:
-                fragment = new Search();
-                break;
             case R.id.nav_exit:
                 finish();
                 break;

@@ -14,8 +14,14 @@ import android.widget.TextView;
 
 import com.icook.dev.i_cook.ChickTapaRecipe.ChickTapaFragment;
 import com.icook.dev.i_cook.ChickenTocinoRecipe.ChickenTocinoFragment;
+import com.icook.dev.i_cook.CurryRecipe.CurryAdapter;
+import com.icook.dev.i_cook.CurryRecipe.CurryFragment;
 import com.icook.dev.i_cook.DaingRecipe.DaingFragment;
 import com.icook.dev.i_cook.FBeefTapaRecipe.FBeefTapaFragment;
+import com.icook.dev.i_cook.PaksiwRecipe.PaksiwFragment;
+import com.icook.dev.i_cook.PinakbetRecipe.PinakbetFragment;
+import com.icook.dev.i_cook.SisigRecipe.SisigAdapter;
+import com.icook.dev.i_cook.SisigRecipe.SisigFragment;
 
 import java.util.List;
 
@@ -47,7 +53,7 @@ public class LunchAdapter extends RecyclerView.Adapter<LunchAdapter.ViewHolder>{
         holder.lPic.setImageResource(listlunch.getPic());
         holder.lTitle.setText(listlunch.getTitle());
 
-        holder.linearLayout.setOnClickListener(new View.OnClickListener(){
+        holder.llinearLayout.setOnClickListener(new View.OnClickListener(){
 
             @Override
             public void onClick(View view) {
@@ -57,26 +63,26 @@ public class LunchAdapter extends RecyclerView.Adapter<LunchAdapter.ViewHolder>{
                 CharSequence tmpCheck = holder.lTitle.getText();
                 if(tmpCheck.equals("Chicken Curry")) {
                     AppCompatActivity activity = (AppCompatActivity) view.getContext();
-                    ChickTapaFragment fragment = new ChickTapaFragment();
+                    CurryFragment fragment = new CurryFragment();
                     fragment.setArguments(bundle);
                     activity.getSupportFragmentManager().beginTransaction().replace(R.id.content_home, fragment).addToBackStack(null).commit();
                 }
                 if(tmpCheck.equals("Crunchy Sisig")){
                     AppCompatActivity activity = (AppCompatActivity) view.getContext();
-                    FBeefTapaFragment fragment = new FBeefTapaFragment();
+                    SisigFragment fragment = new SisigFragment();
                     fragment.setArguments(bundle);
                     activity.getSupportFragmentManager().beginTransaction().replace(R.id.content_home, fragment).addToBackStack(null).commit();
                 }
                 if(tmpCheck.equals("Pinakbet")){
                     AppCompatActivity activity = (AppCompatActivity) view.getContext();
-                    ChickenTocinoFragment fragment = new ChickenTocinoFragment();
+                    PinakbetFragment fragment = new PinakbetFragment();
                     fragment.setArguments(bundle);
                     activity.getSupportFragmentManager().beginTransaction().replace(R.id.content_home, fragment).addToBackStack(null).commit();
 
                 }
                 if(tmpCheck.equals("Paksiw na Lechon")){
                     AppCompatActivity activity = (AppCompatActivity) view.getContext();
-                    DaingFragment fragment = new DaingFragment();
+                    PaksiwFragment fragment = new PaksiwFragment();
                     fragment.setArguments(bundle);
                     activity.getSupportFragmentManager().beginTransaction().replace(R.id.content_home, fragment).addToBackStack(null).commit();
                 }
@@ -94,14 +100,14 @@ public class LunchAdapter extends RecyclerView.Adapter<LunchAdapter.ViewHolder>{
 
         public TextView lTitle;
         public ImageView lPic;
-        public LinearLayout linearLayout;
+        public LinearLayout llinearLayout;
 
         public ViewHolder(View itemView) {
             super(itemView);
 
             lPic = (ImageView) itemView.findViewById(R.id.lunchPic);
             lTitle = (TextView) itemView.findViewById(R.id.lunchTitle);
-            linearLayout = (LinearLayout) itemView.findViewById(R.id.lunchlinearLayout);
+            llinearLayout = (LinearLayout) itemView.findViewById(R.id.lunchlinearLayout);
             lunchCardView = (CardView) itemView.findViewById(R.id.lunchCardView);
         }
     }

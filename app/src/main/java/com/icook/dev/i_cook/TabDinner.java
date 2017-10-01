@@ -19,9 +19,8 @@ public class TabDinner extends Fragment {
     private RecyclerView recyclerView;
     private RecyclerView.Adapter adapter;
 
-    public static final String[] titleArray = new String[] {"Chicken Curry","Temp1","Temp2","Temp3"};
-    public static final String[] descArray = new String[] {"Chicken Curry","TempDesc1", "TempDesc2","TempDesc3"};
-    public static final Integer[] imageArray = {R.drawable.chicken_curry,R.drawable.chicken_curry,R.drawable.chicken_curry,R.drawable.chicken_curry};
+    public static final String[] titleArray = new String[] {"Chicken Adobo","Pancit Guisado","Taco Rice","Pata Tim"};
+    public static final Integer[] imageArray = {R.drawable.chicken_adobo,R.drawable.pancit_guisado,R.drawable.taco_rice,R.drawable.pata_tim};
 
     private List<ListBFast> listRecipes;
 

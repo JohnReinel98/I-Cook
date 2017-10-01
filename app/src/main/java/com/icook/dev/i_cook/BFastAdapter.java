@@ -13,10 +13,17 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.icook.dev.i_cook.ChickTapaRecipe.ChickTapaFragment;
+import com.icook.dev.i_cook.ChickenAdoboRecipe.AdoboFragment;
 import com.icook.dev.i_cook.ChickenTocinoRecipe.ChickenTocinoFragment;
 import com.icook.dev.i_cook.CurryRecipe.CurryFragment;
 import com.icook.dev.i_cook.DaingRecipe.DaingFragment;
 import com.icook.dev.i_cook.FBeefTapaRecipe.FBeefTapaFragment;
+import com.icook.dev.i_cook.PaksiwRecipe.PaksiwFragment;
+import com.icook.dev.i_cook.PancitRecipe.PancitFragment;
+import com.icook.dev.i_cook.PataTimRecipe.PataFragment;
+import com.icook.dev.i_cook.PinakbetRecipe.PinakbetFragment;
+import com.icook.dev.i_cook.SisigRecipe.SisigFragment;
+import com.icook.dev.i_cook.TacoRiceRecipe.TacoFragment;
 
 import java.util.List;
 
@@ -78,6 +85,55 @@ public class BFastAdapter extends RecyclerView.Adapter<BFastAdapter.ViewHolder>{
                 if(tmpCheck.equals("Daing na Bangus")){
                     AppCompatActivity activity = (AppCompatActivity) view.getContext();
                     DaingFragment fragment = new DaingFragment();
+                    fragment.setArguments(bundle);
+                    activity.getSupportFragmentManager().beginTransaction().replace(R.id.content_home, fragment).addToBackStack(null).commit();
+                }
+                if(tmpCheck.equals("Chicken Curry")) {
+                    AppCompatActivity activity = (AppCompatActivity) view.getContext();
+                    CurryFragment fragment = new CurryFragment();
+                    fragment.setArguments(bundle);
+                    activity.getSupportFragmentManager().beginTransaction().replace(R.id.content_home, fragment).addToBackStack(null).commit();
+                }
+                if(tmpCheck.equals("Crunchy Sisig")){
+                    AppCompatActivity activity = (AppCompatActivity) view.getContext();
+                    SisigFragment fragment = new SisigFragment();
+                    fragment.setArguments(bundle);
+                    activity.getSupportFragmentManager().beginTransaction().replace(R.id.content_home, fragment).addToBackStack(null).commit();
+                }
+                if(tmpCheck.equals("Pinakbet")){
+                    AppCompatActivity activity = (AppCompatActivity) view.getContext();
+                    PinakbetFragment fragment = new PinakbetFragment();
+                    fragment.setArguments(bundle);
+                    activity.getSupportFragmentManager().beginTransaction().replace(R.id.content_home, fragment).addToBackStack(null).commit();
+
+                }
+                if(tmpCheck.equals("Paksiw na Lechon")){
+                    AppCompatActivity activity = (AppCompatActivity) view.getContext();
+                    PaksiwFragment fragment = new PaksiwFragment();
+                    fragment.setArguments(bundle);
+                    activity.getSupportFragmentManager().beginTransaction().replace(R.id.content_home, fragment).addToBackStack(null).commit();
+                }
+                if(tmpCheck.equals("Chicken Adobo")){
+                    AppCompatActivity activity = (AppCompatActivity) view.getContext();
+                    AdoboFragment fragment = new AdoboFragment();
+                    fragment.setArguments(bundle);
+                    activity.getSupportFragmentManager().beginTransaction().replace(R.id.content_home, fragment).addToBackStack(null).commit();
+                }
+                if(tmpCheck.equals("Pancit Guisado")){
+                    AppCompatActivity activity = (AppCompatActivity) view.getContext();
+                    PancitFragment fragment = new PancitFragment();
+                    fragment.setArguments(bundle);
+                    activity.getSupportFragmentManager().beginTransaction().replace(R.id.content_home, fragment).addToBackStack(null).commit();
+                }
+                if(tmpCheck.equals("Taco Rice")){
+                    AppCompatActivity activity = (AppCompatActivity) view.getContext();
+                    TacoFragment fragment = new TacoFragment();
+                    fragment.setArguments(bundle);
+                    activity.getSupportFragmentManager().beginTransaction().replace(R.id.content_home, fragment).addToBackStack(null).commit();
+                }
+                if(tmpCheck.equals("Pata Tim")){
+                    AppCompatActivity activity = (AppCompatActivity) view.getContext();
+                    PataFragment fragment = new PataFragment();
                     fragment.setArguments(bundle);
                     activity.getSupportFragmentManager().beginTransaction().replace(R.id.content_home, fragment).addToBackStack(null).commit();
                 }

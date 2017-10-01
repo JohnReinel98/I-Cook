@@ -22,9 +22,11 @@ public class PinakbetIngredients extends Fragment {
     FBeefTapaAdapter adapter;
     List<ListPinakbetIngredients> listIngredient;
 
-    public static final String[] ingredientsArray = new String[] {"4 cups lechon kawali, chopped","1 red bell pepper, seeded, cored and diced" +
-            "1 medium onion, peeled and diced","5 Thai chili peppers, minced","1/2 cup calamansi juice"
-                ,"salt and pepper to taste"};
+    public static final String[] ingredientsArray = new String[] {"1 tablespoon oil","1 small onion, peeled and chopped" +
+            "2 cloves garlic, peeled and minced","2 tablespoons fish sauce","2 medium tomatoes, chopped"
+                ,"1-1/2 cups water","½ small kabocha (calabasa) peeled and cut into pieces","6 to 8 okra, ends trimmed","½ bunch long beans, ends trimmed and cut into into 3-inch lengths",
+    "1 bitter melon, seeded, halved and cut into 1-inch thick","1 large eggplant, ends trimmed and cut into 1-inch thick",
+    "salt and pepper to taste","2 cups lechon kawali, cut into 1-inch pieces"};
 
 
     public PinakbetIngredients() {

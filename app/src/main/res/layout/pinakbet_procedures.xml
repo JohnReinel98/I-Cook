@@ -11,7 +11,25 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="1. In a large bowl, combine lechon kawali, bell pepper, onions, chili peppers and calamansi juice. Gently toss together to evenly distribute. Season with salt and pepper to taste."/>
+        android:text="1. In pot over medium heat, heat oil. Add onions and garlic and cook, stirring regularly, until limp and aromatic. Add tomatoes and cook, mashing with back of spoon, for about 5 minutes or until softened and have released juice. Add fish sauce and continue to cook for about 1 to 2 minutes."/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="20dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="2. Add water and bring to a boil."/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="20dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="3. Add squash and cook for about 2 minutes. Add okra, long beans, bitter melon and eggplant. Continue to cook for about 4 to 5 minutes or until vegetables are tender yet crisp. Season with salt and pepper to taste. Add lechon kawali and gently toss until just heated through. Serve hot."/>
 
     <View
         android:layout_width="match_parent"
